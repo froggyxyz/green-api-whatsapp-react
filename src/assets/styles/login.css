@@ -1,0 +1,103 @@
+.login-screen {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 64px;
+  background: var(--max-bg);
+}
+
+.login-card {
+  width: 580px;
+  max-width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 28px;
+  padding: 32px 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  box-shadow: 0 10px 40px rgba(108, 77, 255, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.login-card h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--max-text);
+}
+
+.login-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--max-text-muted);
+  font-weight: 500;
+}
+
+.login-card input {
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 16px;
+  min-height: 52px;
+  padding: 14px 18px;
+}
+
+.login-card button[type='submit'] {
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 20px;
+  min-height: 60px;
+  padding: 16px 24px;
+  margin-top: 4px;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  flex: 1;
+  padding-right: 52px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 10px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.password-toggle:hover:not(:disabled) {
+  background: var(--max-bg);
+}
+
+.password-toggle img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.hint {
+  margin: 0 auto;
+  max-width: 250px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--max-text-muted);
+}

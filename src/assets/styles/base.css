@@ -1,0 +1,46 @@
+:root {
+  /* Палитра */
+  --max-accent: #6c4dff;
+  --max-accent-hover: #5b3bee;
+  --max-bg: #f7f7fa;
+  --max-sidebar-bg: #ffffff;
+  --max-border: #ebebf0;
+  --max-text: #1c1c22;
+  --max-text-muted: #8b8b9e;
+
+  /* Сообщения */
+  --max-incoming-bg: #ffffff;
+  --max-outgoing-bg: #6c4dff;
+  --max-outgoing-text: #ffffff;
+  --max-bubble-radius: 22px;
+
+  /* Семантические */
+  --max-danger-bg: #fee2e2;
+  --max-danger-bg-light: #fef2f2;
+  --max-danger-text: #991b1b;
+  --max-danger-border: #fca5a5;
+
+  --max-warning-bg: #fef3c7;
+  --max-warning-border: #fde68a;
+  --max-warning-text: #92400e;
+
+  --max-chat-active-bg: #f5f3ff;
+  --max-send-disabled: #d6d6e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background: var(--max-bg);
+  color: var(--max-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100vh;
+}

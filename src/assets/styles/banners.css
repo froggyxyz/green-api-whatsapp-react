@@ -1,0 +1,105 @@
+.auth-error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px;
+  background: var(--max-warning-bg);
+  border-bottom: 1px solid var(--max-warning-border);
+  color: var(--max-warning-text);
+  font-size: 13px;
+}
+
+.auth-error-text {
+  flex: 1;
+}
+
+.auth-error-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-error {
+  padding: 10px 16px;
+  background: var(--max-danger-bg);
+  color: var(--max-danger-text);
+  font-size: 13px;
+}
+
+.form-error {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--max-danger-bg);
+  color: var(--max-danger-text);
+  font-size: 12px;
+  line-height: 1.3;
+  animation: slide-down 0.15s ease-out;
+}
+
+.error-boundary {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  background: var(--max-bg);
+}
+
+.error-boundary-icon {
+  font-size: 56px;
+  opacity: 0.6;
+}
+
+.error-boundary-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--max-text);
+}
+
+.error-boundary-text {
+  margin: 0;
+  font-size: 14px;
+  color: var(--max-text-muted);
+  max-width: 420px;
+}
+
+.error-boundary-details {
+  margin: 8px 0 0;
+  padding: 10px 14px;
+  max-width: 640px;
+  background: var(--max-danger-bg);
+  color: var(--max-danger-text);
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: left;
+}
+
+.error-boundary-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.error-boundary-actions button.secondary {
+  background: transparent;
+  color: var(--max-accent);
+  border: 1px solid var(--max-accent);
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

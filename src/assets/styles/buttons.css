@@ -1,0 +1,72 @@
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  background: var(--max-accent);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: var(--max-accent-hover);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.logout {
+  background: transparent;
+  color: var(--max-text-muted);
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.logout:hover:not(:disabled) {
+  background: var(--max-bg);
+  color: var(--max-accent);
+}
+
+.composer-send {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--max-accent);
+}
+
+.composer-send:hover:not(:disabled) {
+  background: var(--max-accent-hover);
+}
+
+.composer-send:disabled {
+  background: var(--max-send-disabled);
+  opacity: 1;
+}
+
+.composer-send img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.auth-error-actions button {
+  padding: 6px 12px;
+  font-size: 12px;
+  background: var(--max-warning-text);
+}
+
+.auth-error-actions button.secondary {
+  background: transparent;
+  color: var(--max-warning-text);
+  border: 1px solid var(--max-warning-text);
+}

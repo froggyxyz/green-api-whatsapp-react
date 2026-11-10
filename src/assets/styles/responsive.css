@@ -1,0 +1,9 @@
+@media (max-width: 720px) {
+  .sidebar {
+    width: 260px;
+  }
+
+  .message {
+    max-width: 85%;
+  }
+}
