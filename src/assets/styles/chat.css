@@ -154,3 +154,25 @@
   background: white;
   border-color: var(--max-accent);
 }
+
+.chat-header-back {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.chat-header-back:hover:not(:disabled) {
+  background: var(--max-bg);
+}
+
+.chat-header-back img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}

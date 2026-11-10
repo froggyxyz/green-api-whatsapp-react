@@ -1,9 +1,280 @@
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 900px) {
   .sidebar {
     width: 260px;
   }
 
+  .chat-header {
+    padding: 10px 16px;
+    min-height: 80px;
+  }
+
+  .chat-header-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .login-screen {
+    padding: 16px;
+  }
+
+  .login-card {
+    width: 100%;
+    height: 100%;
+    padding: 28px 20px;
+    border-radius: 20px;
+    gap: 14px;
+  }
+
+  .login-card h1 {
+    font-size: 26px;
+  }
+
+  .login-card label {
+    font-size: 13px;
+  }
+
+  .login-card input {
+    min-height: 48px;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+
+  .login-card button[type='submit'] {
+    min-height: 52px;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 16px;
+  }
+
+  .password-toggle {
+    width: 36px;
+    height: 36px;
+    right: 6px;
+  }
+
+  .password-toggle img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hint {
+    font-size: 14px;
+    max-width: 220px;
+  }
+
+  .chat-screen .chat-main {
+    display: none;
+  }
+
+  .chat-screen.has-active-chat .chat-main,
+  .chat-screen.has-error .chat-main {
+    display: flex;
+  }
+
+  .chat-screen.has-active-chat .sidebar,
+  .chat-screen.has-error .sidebar {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+
+  .chat-main {
+    flex: 1;
+  }
+
+  .chat-header {
+    padding: 8px 12px;
+    min-height: 64px;
+    gap: 10px;
+  }
+
+  .chat-header-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .chat-header-name {
+    font-size: 15px;
+  }
+
+  .chat-header-back {
+    display: flex;
+  }
+
+  .messages {
+    padding: 14px;
+    gap: 6px;
+  }
+
   .message {
     max-width: 85%;
+    font-size: 15px;
+    padding: 9px 12px 5px;
+  }
+
+  .message-text {
+    font-size: 15px;
+  }
+
+  .message-time {
+    font-size: 10px;
+  }
+
+  .composer {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .composer input {
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+
+  .composer-send {
+    width: 40px;
+    height: 40px;
+  }
+
+  .composer-send img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .chat-list-item {
+    min-height: 72px;
+    padding: 10px 12px;
+  }
+
+  .chat-list-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 17px;
+  }
+
+  .chat-list-name,
+  .chat-list-preview {
+    font-size: 14px;
+  }
+
+  .auth-error-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .auth-error-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .auth-error-actions button {
+    flex: 1;
+  }
+
+  .login-screen {
+    padding: 16px;
+  }
+
+  .login-card {
+    padding: 24px;
+    border-radius: 20px;
+    gap: 14px;
+  }
+
+  .login-card h1 {
+    font-size: 18px;
+  }
+
+  .hint {
+    font-size: 14px;
+  }
+
+  .login-card input {
+    min-height: 48px;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .login-card button[type='submit'] {
+    min-height: 52px;
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .password-toggle {
+    width: 36px;
+    height: 36px;
+    right: 6px;
+  }
+}
+
+@media (max-width: 380px) {
+  .login-screen {
+    padding: 12px;
+  }
+
+  .login-card {
+    padding: 24px 16px;
+    gap: 12px;
+  }
+
+  .login-card h1 {
+    font-size: 26px;
+  }
+
+  .login-card input {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .login-card button[type='submit'] {
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .hint {
+    font-size: 13px;
+  }
+
+  .chat-list-item {
+    gap: 10px;
+  }
+
+  .chat-list-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .chat-list-name,
+  .chat-list-preview {
+    font-size: 13px;
+  }
+
+  .message {
+    max-width: 92%;
+  }
+
+  .chat-header-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
   }
 }

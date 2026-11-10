@@ -157,6 +157,12 @@ export default function App() {
     }
   }
 
+  function handleCloseChat() {
+    activeChatRef.current = null
+    setActiveChat(null)
+    setMessages([])
+  }
+
   if (!credentials) {
     return <LoginForm onLogin={handleLogin} />
   }
@@ -170,6 +176,7 @@ export default function App() {
       onSendMessage={handleSendMessage}
       onLogout={handleLogout}
       onReconnect={handleReconnect}
+      onCloseChat={handleCloseChat}
     />
   )
 }

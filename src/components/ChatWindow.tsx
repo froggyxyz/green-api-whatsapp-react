@@ -14,6 +14,7 @@ interface Props {
   onSendMessage: (text: string) => Promise<boolean>
   onLogout: () => void
   onReconnect: () => void
+  onCloseChat: () => void
 }
 
 export function ChatWindow({
@@ -24,13 +25,22 @@ export function ChatWindow({
   onSendMessage,
   onLogout,
   onReconnect,
+  onCloseChat,
 }: Props) {
   const disabled = !!authError
   const chatTitle = activeChat ? activeChat.name || activeChat.phone : ''
   const lastMessage = messages.length > 0 ? messages[messages.length - 1] : null
 
+  const screenClass = [
+    'chat-screen',
+    activeChat ? 'has-active-chat' : '',
+    authError ? 'has-error' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+
   return (
-    <div className="chat-screen">
+    <div className={screenClass}>
       <Sidebar
         activeChat={activeChat}
         lastMessage={lastMessage}
@@ -52,7 +62,7 @@ export function ChatWindow({
           <EmptyChat />
         ) : (
           <>
-            <ChatHeader chatTitle={chatTitle} />
+            <ChatHeader chatTitle={chatTitle} onBack={onCloseChat} />
             <MessageList messages={messages} chatId={activeChat.chatId} />
             <Composer disabled={disabled} onSend={onSendMessage} />
           </>
