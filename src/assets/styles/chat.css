@@ -45,15 +45,15 @@
 }
 
 .chat-header-avatar {
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: var(--max-accent);
   color: white;
   display: grid;
   place-items: center;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   flex-shrink: 0;
 }
 
